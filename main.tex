@@ -1,0 +1,78 @@
+\documentclass[conference, 12pt]{IEEEtran}
+%\documentclass[twocolumn, a4paper]{article}
+\usepackage{verbatimbox}
+\usepackage{url}
+\usepackage{subcaption}
+%%%%%%%%%% verbatim related
+\usepackage{fancyvrb}
+%\usepackage{fixltx2e}
+\fvset{framesep=2mm,fontsize=\scriptsize,framerule=.1mm,numbersep=1mm,commandchars=\\\{\}}
+\usepackage[usenames,dvipsnames]{color}
+
+\newif\ifrev
+%%%%%%%%%%%%%%%%%%
+% COMMENT OUT NEXT LINE TO HIDE comments
+\revtrue
+%%%%%%%%%%%%%%%%%%
+
+\newcommand{\urlwofont}[1]{\underline{\urlstyle{same}\url{#1}}}
+
+\ifrev
+  \newcommand{\yanyan}[1]{{\color{blue} [Yanyan: #1]}}
+  \newcommand{\dave}[1]{{\color{red} [Dave: #1]}}
+\else
+  \newcommand{\yanyan}[1]{}
+  \newcommand{\dave}[1]{}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\pagestyle{plain}
+\title{Confusion in Coding and \\Comprehension Models to Overcome it}
+
+\author{\\
+\\
+David Stout \\
+
+University of Colorado Colorado Springs \\
+
+October 2018}
+\date{}
+
+%\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{fancyvrb} %needed to center verbatim text
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+\newcommand{\comm}[2]{}
+\begin{document}
+
+\maketitle
+\input{abstract}
+\input{Intro}
+
+\begin{figure*}[ht!]
+\centering
+\includegraphics[scale=0.85]{images/ProgramCompModels}
+\caption{Commonalities in comprehension models. \cite{noauthor_pdf_nodate}} 
+\label{fig:models}
+\end{figure*}
+
+%\input{CodeComp}
+\input{models}
+\input{Current}
+\input{Compare}
+
+\input{Conclusion}
+
+%\clearpage
+
+%\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{References2}
+\end{document}

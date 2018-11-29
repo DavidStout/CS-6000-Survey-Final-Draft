@@ -1,0 +1,47 @@
+\section{Literature Review}\label{sec-models}
+There are varying models of code comprehension that have been
+suggested over the years. Most contain some 
+common elements, as shown in Figure \ref{fig:models}~\cite{noauthor_pdf_nodate}. 
+
+
+
+In this paper we will focus on the three most important:
+\begin{itemize}
+    \item The Top-down model
+    \item The Bottom-up model
+    \item The Integrated (combined) model
+\end{itemize}
+
+The \textbf{Top-down model} describes a process that consists of applying knowledge about the domain of the
+program and then applying this knowledge to the structure of the 
+code~\cite{noauthor_pdf_nodate}. This
+process of assimilating data is driven by recognizing beacons, or sets of features that typically
+indicate the occurrence of certain structures or operations within the code, as described by Brooks~\cite{brooks_towards_1983}. 
+Top-down comprehension is a functional understanding of the code, starting
+with the big picture and then breaking down the source code from there into smaller segments in order
+to understand the whole.
+
+The \textbf{Bottom-up model} describes an assimilation process in 
+which programmers start with individual code
+statements, and chunk or group these into higher level abstractions. 
+The process is then repeated at
+successively higher levels until a complete mental representation of the program is formed~\cite{noauthor_pdf_nodate}. 
+There have been investigations into the human factors of code
+comprehension, showing that minimally small patterns in code can 
+and do confuse programmers~\cite{gopstein_understanding_2017, 
+gopstein_prevalence_2018}. Generally
+seen as a method of chunking microstructures in the code into macrostructures to comprehend the
+program flow, Bottom-up modelling uses environmental information to form a perception of the whole by
+identifying individual base elements in great detail in order to link them to greater and greater
+subsystems. 
+
+Some authors do not accept that there is a dominance of either top-down or bottom-up
+comprehension, choosing instead to believe that the developer switches between the two models as the
+situation needs. This ideology is made clear in the 
+\textbf{Integrated model}, which is a combined model of both the Top-down and Bottom-up approaches \cite{noauthor_pdf_nodate}. As the developer goes through the
+assimilation process of comprehending the source code, they switch from a functional understanding of the
+program, to a control-flow understanding as is needed for greater overall comprehension. This approach
+seems to be a more intuitive process and depends on the developer's previous experience and the berth of
+their knowledge base.
+
+By understanding these comprehension models, researchers are able to evaluate the best methods for measuring code comprehension, create software clarity metrics for automated comprehension tools, and develop better coding style guides. We will use these models to help organize and classify the current research.
